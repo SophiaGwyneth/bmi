@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="shortcut icon" type="image/x-icon" href="pinkk.jpg" />
+    <link rel="stylesheet" href="style.css">     
+    <script defer src="script.js"></script>
+    <style>
+        .hidden{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+  
+    <div class="container">
+    <h1>Body Mass Index Calculator</h1>
+    <h5>Enter your Age, Weight, and Height to calculate your BMI.</h5>
+    <form id="bmi-calculator">
+        <label for="age"> Age (Ages 1-120):</label>
+        <input type="number" id="age" name="age" required min="1" max="120"><br>
+
+        <label for="weight"> Weight(kg):</label>
+        <input type="number" id="weight" name="weight" required min="1"><br>
+
+        <label for="height"> Height(cm):</label>
+        <input type="number" id="height" name="height" required min="1"><br>
+
+        
+        <button type="button" id="calculate-btn">Calculate</button>
+    </form>
+
+    <div id="results" class="hidden">
+        <h2>Results</h2>
+        <p id="bmi-result"></p>
+        <p id="bmi-category"></p>
+        <p id="health-tips"></p>
+    </div>
+
+   
+</div>
+</body>
+</html>
